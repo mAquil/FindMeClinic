@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { SearchDoctorService } from './search-doctor.service';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SharedService } from './shared.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   entryComponents: [
     MyDialogComponent
   ],
-  providers: [ ],
+  providers: [ SharedService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

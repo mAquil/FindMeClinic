@@ -3,7 +3,6 @@ import { Doctor } from '../model/doctor.model';
 import { MatDialog } from '@angular/material';
 import { MyDialogComponent } from '../my-dialog/my-dialog.component';
 import { SearchDoctorService} from '../search-doctor.service';
-import { from } from 'rxjs';
 import { SharedService } from '../shared.service';
 import { Router } from '@angular/router';
 
@@ -13,6 +12,7 @@ import { Router } from '@angular/router';
   templateUrl: './search-doctor.component.html',
   styleUrls: ['./search-doctor.component.css']
 })
+
 export class SearchDoctorComponent implements OnInit {
   title = 'MyDoctors';
   doctors = [];
@@ -39,29 +39,6 @@ export class SearchDoctorComponent implements OnInit {
 
       
 
-  // doctors: Doctor[]=[
-  //   {
-  //     name: 'ashish khurana',
-  //     specialization: 'opthalmologist',
-  //     clinicName: 'regency clinic',
-  //     address: '21/56 preet vihar',
-  //     photoPath: 'assets/images/avtar3.png'
-  //   },
-  //   {
-  //   name: 'iqbal khan',
-  //     specialization: 'dermatologist',
-  //     clinicName: 'apollo hospital',
-  //     address: 'D block koramangla',
-  //     photoPath: 'assets/images/avtar3.png'
-  //   },
-  //   {
-  //     name: 'priya sen',
-  //     specialization: 'dentist',
-  //     clinicName: 'new polyclinic',
-  //     address: 'civil lines',
-  //     photoPath: 'assets/images/avtar2.png'
-  //   }
-  // ];
   // constructor(public dialog: MatDialog) { }
 
   // ngOnInit() {
@@ -84,8 +61,9 @@ export class SearchDoctorComponent implements OnInit {
 
 passDetails(details) {
   // console.log("search Doctor Component", details)
-          this.share.doctorDetails.next(details)
-          this.router.navigateByUrl("/doctorView")
+          this.share.send(details);
+          // this.share.doctorDetails.next(details);
+          this.router.navigateByUrl("/doctorView");
 }
 
 

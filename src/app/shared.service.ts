@@ -10,4 +10,9 @@ export class SharedService {
 
 
   doctorDetails = new Subject();
+  doctorDetail$ = this.doctorDetails.asObservable();
+
+  send(data){
+    this.doctorDetails.next(data);
+  }  
 }
