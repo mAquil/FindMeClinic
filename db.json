@@ -1,0 +1,88 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [
+    {
+    "name": "typicode"
+  }
+],
+
+  "doctors": [
+    {
+      "emailId":"khannaashish@gmail.com",
+      "role":"doctor",
+      "name": "Ashish Khanna",
+      "gender": "Male",
+      "phone":"9618965349",
+      "medicalLicense":"MP400",
+      "qualification":"MBBS, MS",
+      "specialization": "Opthalmologist",
+      "practiceStartedDate":"2014-06-17",
+      "clinicName": "Regency Clinic",
+      "address":{
+        "state":"New Delhi",
+        "city":"Delhi",
+        "address":"21/56 Block 1",
+        "area":"Preet vihar",
+        "pinCode":"110025"
+      } ,
+      "photoPath": "assets/images/d1.jpg",
+      "password":"shahina"
+    },
+    {
+
+      "emailId":"khan123@gmail.com",
+      "role":"doctor",
+      "name": "Adeel Khan",
+      "gender": "Male",
+      "phone":"9651399079",
+      "medicalLicense":"GT706",
+      "qualification":"MBBS, MD",
+      "specialization": "Dermatologist",
+      "practiceStartedDate":"2016-01-09",
+      "clinicName": "Apollo Hospital",
+      "address":{
+        "state":"Karnataka",
+        "city":"Bangalore",
+        "address":"98/41 Block 5",
+        "area":"Marathahalli",
+        "pinCode":"560092"
+      } ,
+      "photoPath": "assets/images/d2.jpg",
+      "password":"shahina"
+    },
+    {
+      "emailId":"priyasen@gmail.com",
+      "role":"doctor",
+      "name": "Priya Sen",
+      "gender": "Female",
+      "phone":"9618970649",
+      "medicalLicense":"AP350",
+      "qualification":"BDS, MDS",
+      "specialization": "Dentist",
+      "practiceStartedDate":"2019-04-25",
+      "clinicName": "New Polyclinic",
+      "address":{
+        "state":"Karnataka",
+        "city":"Bangalore",
+        "address":"6th block",
+        "area":"Koramangala",
+        "pinCode":"560095"
+      } ,
+      "photoPath": "assets/images/d3.jpg",
+      "password":"shahina"
+    }
+  ]
+}
