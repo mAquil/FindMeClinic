@@ -21,6 +21,8 @@ export class SearchDoctorComponent implements OnInit {
               private router:Router) {
  
   }
+
+
   ngOnInit() {
     const dialogRef = this.dialog.open(MyDialogComponent, {
       width: '650px',
@@ -37,27 +39,7 @@ export class SearchDoctorComponent implements OnInit {
  
       })
 
-      
-
-  // constructor(public dialog: MatDialog) { }
-
-  // ngOnInit() {
-  //   const dialogRef = this.dialog.open(MyDialogComponent, {
-  //     width: '650px',
-  //     height: '300px'
-  //   });
-  // }
-
-  // openDialog(): void {
-   
-
-  //   dialogRef.afterClosed().subscribe(result => {
-  //     console.log('The dialog was closed');
-  //   });
-  // }
-
 }
-
 
 passDetails(details) {
   // console.log("search Doctor Component", details)
@@ -65,6 +47,5 @@ passDetails(details) {
           // this.share.doctorDetails.next(details);
           this.router.navigateByUrl("/doctorView");
 }
-
 
 }

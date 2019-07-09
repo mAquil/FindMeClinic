@@ -17,6 +17,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SharedService } from './shared.service';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +38,8 @@ import { SharedService } from './shared.service';
     MatDialogModule,
     HttpClientModule,
     MatToolbarModule,
-    AppRoutingModule
+    AppRoutingModule,
+   
   ],
   entryComponents: [
     MyDialogComponent
